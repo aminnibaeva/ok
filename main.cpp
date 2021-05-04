@@ -16,6 +16,16 @@ int bSearch(int array[], int left, int right, int elem){
 }
 
 
-int main() {
 
+int main() {
+    int arr[] = { 5, 10, 12, 14, 345};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    int elem = 10;
+    int search = bSearch(arr, 0, n - 1, elem);
+    if (search == 0){
+        cout << "Elem not found";
+    }else{
+       cout << "Elem have ind " << search;
+    }
+    return 0;
 }
